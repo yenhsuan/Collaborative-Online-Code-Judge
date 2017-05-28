@@ -1,0 +1,19 @@
+
+
+.label.difficulty {
+  padding-top: 0.6em;
+  color: #fbfdfa;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 1.2em;
+}
+
+
+.badge-warning {
+  background-color: #f89406;
+}
+.badge-warning:hover {
+  background-color: #c67605;
+}

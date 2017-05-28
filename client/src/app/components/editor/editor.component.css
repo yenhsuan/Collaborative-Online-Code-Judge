@@ -1,0 +1,28 @@
+@media screen {
+	
+	.select {
+		margin-bottom: 5px;
+	}
+	
+	#editor {
+        height:550px;
+        position: relative;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+    }
+}
+
+#submit {
+	margin-bottom: 10px;
+}
+
+
+#editorSec {
+	margin-bottom: 50px;
+}
+/*#invite {
+	margin-left:10px;
+}*/
+
+

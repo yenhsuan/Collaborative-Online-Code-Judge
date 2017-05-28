@@ -1,0 +1,19 @@
+
+<div class = "container" *ngIf="currentProblem">
+	<div class=row>
+	<div class="col-xs-12 col-md-4">
+
+		<div class="panel panel-primary">
+		  <div class="panel-heading"><h4>{{currentProblem.id}}. {{currentProblem.name}}</h4></div>
+		  <div class="panel-body">{{currentProblem.desc}}</div>
+		  <div class="panel-footer">
+		  	<span [ngClass]="{'label-primary':currentProblem.difficulty=='super','label-warning':currentProblem.difficulty=='medium','label-danger':currentProblem.difficulty=='hard','label-success':currentProblem.difficulty=='easy','label':true}">{{currentProblem.difficulty}}</span>
+		  </div>
+
+		</div>
+	</div>
+	<div class="hidden-xs col-sm-12 col-md-8">
+    	<app-editor></app-editor>
+  	</div>
+  	</div>
+</div>
