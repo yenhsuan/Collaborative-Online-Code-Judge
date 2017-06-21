@@ -1367,7 +1367,7 @@ module.exports = "\n<div class='container'>\n\t<div class=\"row\">\n\t\t<div cla
 /***/ 274:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"footer-section\">\n<div class=\"navbar navbar-default navbar-fixed-bottom\">\n    <div class=\"container\">\n      <p class=\"navbar-text text-center\">© 2017 - Project built by Yenhsuan Chen (Terry)\n      </p>\n\n      <a href=\"https://www.linkedin.com/in/yenhsuan-terry-chen-477a99134\" class=\"navbar-btn btn-primary btn-sm pull-right\">\n      <span class=\"fa fa-linkedin-square\"></span>  My LinkedIn</a>\n    </div>\n</div>\n</div>\n"
+module.exports = "<div class=\"footer-section\">\n<div class=\"navbar navbar-default navbar-fixed-bottom\">\n    <div class=\"container\">\n      <p class=\"hidden-xs navbar-text text-center\">© 2017 - Project built by Yenhsuan Chen (Terry)\n      </p>\n      \n      <p class=\"visible-xs navbar-text text-center\">© 2017 - Project built by Yenhsuan Chen (Terry)\n        <a href=\"https://www.linkedin.com/in/yenhsuan-terry-chen-477a99134\">\n        <span class=\"fa fa-linkedin-square\"></span></a>\n      </p>\n\n\n      <a href=\"https://www.linkedin.com/in/yenhsuan-terry-chen-477a99134\" class=\"hidden-xs navbar-btn btn-primary btn-sm pull-right\">\n      <span class=\"fa fa-linkedin-square\"></span>  My LinkedIn</a>\n    </div>\n</div>\n</div>\n"
 
 /***/ }),
 
