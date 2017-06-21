@@ -19,13 +19,13 @@
 			<a class='list-group-item' *ngFor="let problem of problems | filterPipe:search" [routerLink]="['/problems',problem.id]">
 
 				<div class="row">
-				<div class="col-sm-1">
+				<div class="col-sm-1 col-xs-2">
 
 				<span [ngClass]="{'label-primary':problem.difficulty=='super','label-warning':problem.difficulty=='medium','label-danger':problem.difficulty=='hard','label-success':problem.difficulty=='easy','label':true}">{{problem.difficulty}}</span>
 
 				</div>
 
-				<div class="col-sm-11">
+				<div class="col-sm-11 col-xs-10">
 				<strong class="title">{{problem.id}}. {{problem.name}}</strong>
 				<span *ngIf="!auth.authenticated()" class="badge badge-warning pull-right"><i class="fa fa-lock" aria-hidden="true"></i></span>
 				</div>
