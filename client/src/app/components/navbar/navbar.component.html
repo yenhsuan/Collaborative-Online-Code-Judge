@@ -16,8 +16,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
       <ul class="nav navbar-nav">
-      <li><a href="/home">Home</a></li>
-      <li><a href="/problems">Problem list</a></li>
+      <li><a [routerLink]="['/home']">Home</a></li>
+      <li><a [routerLink]="['/problems']">Problem list</a></li>
       </ul>
 
       <form class="navbar-form navbar-left">
@@ -32,9 +32,9 @@
 
       <ul class="nav navbar-nav navbar-right" >
         <li *ngIf="!auth.authenticated()">
-        	<form class="navbar-form" *ngIf="!auth.authenticated()">
-        		<button style="margin-left: 10px" class="btn btn-primary" name="signin" (click)="login()" >Sign in</button>
-        	</form>
+        	<div *ngIf="!auth.authenticated()">
+        		<button style="margin-left: 10px; margin-top:8px" class="btn btn-primary" name="signin" (click)="login()" >Sign in</button>
+        	</div>
         </li>
         <li class="dropdown" *ngIf="auth.authenticated()">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >{{username}}<span class="caret"></span></a>
